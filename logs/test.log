@@ -276,3 +276,46 @@ The DISM log file can be found at C:\Windows\Logs\DISM\dism.log
 STDERR: 
 ---- End output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:ApplicationServer /norestart   ----
 Ran C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:ApplicationServer /norestart   returned -2146498548
+[2015-06-26T20:03:15+00:00] FATAL: Stacktrace dumped to C:/chef/cache/chef-stacktrace.out
+[2015-06-26T20:03:15+00:00] FATAL: Chef::Exceptions::PrivateKeyMissing: I cannot read C:\chef\validation.pem, which you told me to use to sign requests!
+[2015-06-26T20:46:00+00:00] ERROR: Running exception handlers
+[2015-06-26T20:46:00+00:00] ERROR: Exception handlers complete
+[2015-06-26T20:46:00+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T20:46:00+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: windows_feature[AS-WAS-Support] (bwkz::default line 4) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42, 127, 3010], but received '87'
+---- Begin output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:AS-WAS-Support /norestart  /All ----
+STDOUT: Deployment Image Servicing and Management tool
+Version: 6.1.7600.16385
+
+Image Version: 6.1.7601.18489
+
+
+Error: 87
+
+The all option is not recognized in this context.
+For more information, refer to the help.
+
+The DISM log file can be found at C:\Windows\Logs\DISM\dism.log
+STDERR: 
+---- End output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:AS-WAS-Support /norestart  /All ----
+Ran C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:AS-WAS-Support /norestart  /All returned 87
+[2015-06-26T20:59:53+00:00] ERROR: Running exception handlers
+[2015-06-26T20:59:53+00:00] ERROR: Exception handlers complete
+[2015-06-26T20:59:53+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T20:59:53+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: windows_feature[AS-WAS-Support] (bwkz::default line 12) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42, 127, 3010], but received '-2146498548'
+---- Begin output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:AS-WAS-Support /norestart   ----
+STDOUT: Deployment Image Servicing and Management tool
+Version: 6.1.7600.16385
+
+Image Version: 6.1.7601.18489
+
+
+Error: 0x800f080c
+
+Feature name AS-WAS-Support is unknown.
+A Windows feature name was not recognized.
+Use the /Get-Features option to find the name of the feature in the image and try the command again.
+
+The DISM log file can be found at C:\Windows\Logs\DISM\dism.log
+STDERR: 
+---- End output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:AS-WAS-Support /norestart   ----
+Ran C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:AS-WAS-Support /norestart   returned -2146498548

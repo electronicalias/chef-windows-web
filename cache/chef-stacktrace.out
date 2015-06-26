@@ -1,4 +1,4 @@
-Generated at 2015-06-26 10:27:52 +0000
+Generated at 2015-06-26 20:03:15 +0000
 Chef::Exceptions::PrivateKeyMissing: I cannot read C:\chef\validation.pem, which you told me to use to sign requests!
 C:/opscode/chef/embedded/apps/chef/lib/chef/http/authenticator.rb:78:in `rescue in load_signing_key'
 C:/opscode/chef/embedded/apps/chef/lib/chef/http/authenticator.rb:68:in `load_signing_key'
