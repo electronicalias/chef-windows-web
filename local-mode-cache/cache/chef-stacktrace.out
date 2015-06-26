@@ -1,0 +1,55 @@
+Generated at 2015-06-26 13:56:41 +0000
+Mixlib::ShellOut::ShellCommandFailed: windows_feature[ApplicationServer] (bwkz::default line 4) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42, 127, 3010], but received '-2146498548'
+---- Begin output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:ApplicationServer /norestart   ----
+STDOUT: Deployment Image Servicing and Management tool
+Version: 6.1.7600.16385
+
+Image Version: 6.1.7601.18489
+
+
+Error: 0x800f080c
+
+Feature name ApplicationServer is unknown.
+A Windows feature name was not recognized.
+Use the /Get-Features option to find the name of the feature in the image and try the command again.
+
+The DISM log file can be found at C:\Windows\Logs\DISM\dism.log
+STDERR: 
+---- End output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:ApplicationServer /norestart   ----
+Ran C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:ApplicationServer /norestart   returned -2146498548
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/mixlib-shellout-2.0.1-x86-mingw32/lib/mixlib/shellout.rb:278:in `invalid!'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/mixlib-shellout-2.0.1-x86-mingw32/lib/mixlib/shellout.rb:265:in `error!'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/shell_out.rb:56:in `shell_out!'
+C:/chef/local-mode-cache/cache/cookbooks/windows/providers/feature_dism.rb:28:in `install_feature'
+C:/chef/local-mode-cache/cache/cookbooks/windows/libraries/feature_base.rb:8:in `action_install'
+C:/opscode/chef/embedded/apps/chef/lib/chef/provider.rb:134:in `run_action'
+C:/opscode/chef/embedded/apps/chef/lib/chef/resource.rb:562:in `run_action'
+C:/opscode/chef/embedded/apps/chef/lib/chef/runner.rb:49:in `run_action'
+C:/opscode/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `block (2 levels) in converge'
+C:/opscode/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `each'
+C:/opscode/chef/embedded/apps/chef/lib/chef/runner.rb:81:in `block in converge'
+C:/opscode/chef/embedded/apps/chef/lib/chef/resource_collection/resource_list.rb:83:in `block in execute_each_resource'
+C:/opscode/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+C:/opscode/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+C:/opscode/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+C:/opscode/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+C:/opscode/chef/embedded/apps/chef/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+C:/opscode/chef/embedded/apps/chef/lib/chef/resource_collection/resource_list.rb:81:in `execute_each_resource'
+C:/opscode/chef/embedded/apps/chef/lib/chef/runner.rb:80:in `converge'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:339:in `block in converge'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:334:in `catch'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:334:in `converge'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:353:in `converge_and_save'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:457:in `run'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:253:in `run_with_graceful_exit_option'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:230:in `block in run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/local_mode.rb:39:in `with_server_connectivity'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:213:in `run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:402:in `block in interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:382:in `run_application'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:60:in `run'
+C:/opscode/chef/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+C:/opscode/chef/bin/chef-client:63:in `load'
+C:/opscode/chef/bin/chef-client:63:in `<main>'

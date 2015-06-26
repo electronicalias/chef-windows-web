@@ -1,0 +1,278 @@
+# Logfile created on 2015-06-26 10:59:23 +0000 by logger.rb/41954
+[2015-06-26T10:59:33+00:00] ERROR: Could not read C:/chef/cookbooks/bwkz into a Chef object: undefined local variable or method `iis' for #<Chef::Cookbook::Metadata:0x4891320>
+[2015-06-26T10:59:33+00:00] ERROR: C:/chef/cookbooks/bwkz/metadata.rb:11:in `from_file'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `instance_eval'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `from_file'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:253:in `apply_ruby_metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:161:in `block in metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:158:in `each'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:158:in `metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:76:in `load'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/file_system/chef_repository_file_system_cookbook_dir.rb:46:in `chef_object'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:151:in `block in get'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:445:in `with_entry'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:146:in `get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:47:in `block in get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:113:in `fix_exceptions'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:40:in `get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_base.rb:52:in `get_data'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:77:in `block in depsolve'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `each'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `depsolve'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:37:in `post'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_base.rb:30:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_router.rb:24:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:589:in `block in app'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:305:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:305:in `handle_socketless_request'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/socketless_server_map.rb:79:in `request'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/socketless_server_map.rb:33:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http/socketless_chef_zero_client.rb:153:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:266:in `block in send_http_request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:298:in `block in retrying_http_errors'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:296:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:296:in `retrying_http_errors'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:260:in `send_http_request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:143:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:126:in `post'
+C:/opscode/chef/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:182:in `sync_cookbooks'
+C:/opscode/chef/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:76:in `setup_run_context'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:256:in `setup_run_context'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:454:in `run'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:253:in `run_with_graceful_exit_option'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:230:in `block in run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/local_mode.rb:39:in `with_server_connectivity'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:213:in `run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:402:in `block in interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:382:in `run_application'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:60:in `run'
+C:/opscode/chef/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+C:/opscode/chef/bin/chef-client:63:in `load'
+C:/opscode/chef/bin/chef-client:63:in `<main>'
+[2015-06-26T10:59:33+00:00] ERROR: Running exception handlers
+[2015-06-26T10:59:33+00:00] ERROR: Exception handlers complete
+[2015-06-26T10:59:33+00:00] FATAL: Stacktrace dumped to C:/chef/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T10:59:33+00:00] FATAL: Net::HTTPFatalError: 500 "Internal Server Error"
+[2015-06-26T11:09:09+00:00] ERROR: Could not read C:/chef/cookbooks/bwkz into a Chef object: undefined local variable or method `iis' for #<Chef::Cookbook::Metadata:0x4c10c10>
+[2015-06-26T11:09:09+00:00] ERROR: C:/chef/cookbooks/bwkz/metadata.rb:11:in `from_file'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `instance_eval'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `from_file'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:253:in `apply_ruby_metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:161:in `block in metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:158:in `each'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:158:in `metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:76:in `load'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/file_system/chef_repository_file_system_cookbook_dir.rb:46:in `chef_object'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:151:in `block in get'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:445:in `with_entry'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:146:in `get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:47:in `block in get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:113:in `fix_exceptions'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:40:in `get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_base.rb:52:in `get_data'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:77:in `block in depsolve'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `each'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `depsolve'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:37:in `post'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_base.rb:30:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_router.rb:24:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:589:in `block in app'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:305:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:305:in `handle_socketless_request'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/socketless_server_map.rb:79:in `request'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/socketless_server_map.rb:33:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http/socketless_chef_zero_client.rb:153:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:266:in `block in send_http_request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:298:in `block in retrying_http_errors'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:296:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:296:in `retrying_http_errors'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:260:in `send_http_request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:143:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:126:in `post'
+C:/opscode/chef/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:182:in `sync_cookbooks'
+C:/opscode/chef/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:76:in `setup_run_context'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:256:in `setup_run_context'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:454:in `run'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:253:in `run_with_graceful_exit_option'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:230:in `block in run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/local_mode.rb:39:in `with_server_connectivity'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:213:in `run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:402:in `block in interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:382:in `run_application'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:60:in `run'
+C:/opscode/chef/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+C:/opscode/chef/bin/chef-client:63:in `load'
+C:/opscode/chef/bin/chef-client:63:in `<main>'
+[2015-06-26T11:09:09+00:00] ERROR: Running exception handlers
+[2015-06-26T11:09:09+00:00] ERROR: Exception handlers complete
+[2015-06-26T11:09:09+00:00] FATAL: Stacktrace dumped to C:/chef/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T11:09:09+00:00] FATAL: Net::HTTPFatalError: 500 "Internal Server Error"
+[2015-06-26T11:10:03+00:00] ERROR: Could not read C:/chef/cookbooks/bwkz into a Chef object: undefined local variable or method `iis' for #<Chef::Cookbook::Metadata:0x49f9bf0>
+[2015-06-26T11:10:03+00:00] ERROR: C:/chef/cookbooks/bwkz/metadata.rb:11:in `from_file'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `instance_eval'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `from_file'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:253:in `apply_ruby_metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:161:in `block in metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:158:in `each'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:158:in `metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:76:in `load'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/file_system/chef_repository_file_system_cookbook_dir.rb:46:in `chef_object'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:151:in `block in get'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:445:in `with_entry'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:146:in `get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:47:in `block in get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:113:in `fix_exceptions'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:40:in `get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_base.rb:52:in `get_data'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:77:in `block in depsolve'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `each'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `depsolve'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:37:in `post'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_base.rb:30:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_router.rb:24:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:589:in `block in app'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:305:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:305:in `handle_socketless_request'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/socketless_server_map.rb:79:in `request'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/socketless_server_map.rb:33:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http/socketless_chef_zero_client.rb:153:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:266:in `block in send_http_request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:298:in `block in retrying_http_errors'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:296:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:296:in `retrying_http_errors'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:260:in `send_http_request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:143:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:126:in `post'
+C:/opscode/chef/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:182:in `sync_cookbooks'
+C:/opscode/chef/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:76:in `setup_run_context'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:256:in `setup_run_context'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:454:in `run'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:253:in `run_with_graceful_exit_option'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:230:in `block in run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/local_mode.rb:39:in `with_server_connectivity'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:213:in `run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:402:in `block in interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:382:in `run_application'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:60:in `run'
+C:/opscode/chef/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+C:/opscode/chef/bin/chef-client:63:in `load'
+C:/opscode/chef/bin/chef-client:63:in `<main>'
+[2015-06-26T11:10:03+00:00] ERROR: Running exception handlers
+[2015-06-26T11:10:03+00:00] ERROR: Exception handlers complete
+[2015-06-26T11:10:03+00:00] FATAL: Stacktrace dumped to C:/chef/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T11:10:03+00:00] FATAL: Net::HTTPFatalError: 500 "Internal Server Error"
+[2015-06-26T11:10:57+00:00] ERROR: Could not read C:/chef/cookbooks/bwkz into a Chef object: undefined local variable or method `iis' for #<Chef::Cookbook::Metadata:0x49e2418>
+[2015-06-26T11:10:57+00:00] ERROR: C:/chef/cookbooks/bwkz/metadata.rb:11:in `from_file'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `instance_eval'
+C:/opscode/chef/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `from_file'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:253:in `apply_ruby_metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:161:in `block in metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:158:in `each'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:158:in `metadata'
+C:/opscode/chef/embedded/apps/chef/lib/chef/cookbook/cookbook_version_loader.rb:76:in `load'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/file_system/chef_repository_file_system_cookbook_dir.rb:46:in `chef_object'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:151:in `block in get'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:445:in `with_entry'
+C:/opscode/chef/embedded/apps/chef/lib/chef/chef_fs/chef_fs_data_store.rb:146:in `get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:47:in `block in get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:113:in `fix_exceptions'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/data_store/v1_to_v2_adapter.rb:40:in `get'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_base.rb:52:in `get_data'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:77:in `block in depsolve'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `each'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `depsolve'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:37:in `post'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_base.rb:30:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/rest_router.rb:24:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:589:in `block in app'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:305:in `call'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/server.rb:305:in `handle_socketless_request'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/socketless_server_map.rb:79:in `request'
+C:/opscode/chef/embedded/lib/ruby/gems/2.0.0/gems/chef-zero-4.2.1/lib/chef_zero/socketless_server_map.rb:33:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http/socketless_chef_zero_client.rb:153:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:266:in `block in send_http_request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:298:in `block in retrying_http_errors'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:296:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:296:in `retrying_http_errors'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:260:in `send_http_request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:143:in `request'
+C:/opscode/chef/embedded/apps/chef/lib/chef/http.rb:126:in `post'
+C:/opscode/chef/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:182:in `sync_cookbooks'
+C:/opscode/chef/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:76:in `setup_run_context'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:256:in `setup_run_context'
+C:/opscode/chef/embedded/apps/chef/lib/chef/client.rb:454:in `run'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:253:in `run_with_graceful_exit_option'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:230:in `block in run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/local_mode.rb:39:in `with_server_connectivity'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:213:in `run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:402:in `block in interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `loop'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:392:in `interval_run_chef_client'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application/client.rb:382:in `run_application'
+C:/opscode/chef/embedded/apps/chef/lib/chef/application.rb:60:in `run'
+C:/opscode/chef/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+C:/opscode/chef/bin/chef-client:63:in `load'
+C:/opscode/chef/bin/chef-client:63:in `<main>'
+[2015-06-26T11:10:57+00:00] ERROR: Running exception handlers
+[2015-06-26T11:10:57+00:00] ERROR: Exception handlers complete
+[2015-06-26T11:10:57+00:00] FATAL: Stacktrace dumped to C:/chef/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T11:10:57+00:00] FATAL: Net::HTTPFatalError: 500 "Internal Server Error"
+[2015-06-26T12:58:38+00:00] ERROR: Running exception handlers
+[2015-06-26T12:58:38+00:00] ERROR: Exception handlers complete
+[2015-06-26T12:58:38+00:00] FATAL: Stacktrace dumped to C:/chef/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T12:58:38+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: windows_feature[IIS-ApplicationServerRole] (bwkz::default line 5) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42, 127, 3010], but received '-2146498548'
+---- Begin output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:IIS-ApplicationServerRole /norestart   ----
+STDOUT: Deployment Image Servicing and Management tool
+Version: 6.1.7600.16385
+
+Image Version: 6.1.7601.18489
+
+
+Error: 0x800f080c
+
+Feature name IIS-ApplicationServerRole is unknown.
+A Windows feature name was not recognized.
+Use the /Get-Features option to find the name of the feature in the image and try the command again.
+
+The DISM log file can be found at C:\Windows\Logs\DISM\dism.log
+STDERR: 
+---- End output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:IIS-ApplicationServerRole /norestart   ----
+Ran C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:IIS-ApplicationServerRole /norestart   returned -2146498548
+[2015-06-26T13:10:10+00:00] ERROR: Running exception handlers
+[2015-06-26T13:10:10+00:00] ERROR: Exception handlers complete
+[2015-06-26T13:10:10+00:00] FATAL: Stacktrace dumped to C:/chef/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T13:10:11+00:00] FATAL: Chef::Exceptions::ValidationFailed: Option all must be a kind of [TrueClass, FalseClass]!  You passed :true.
+[2015-06-26T13:17:54+00:00] ERROR: Running exception handlers
+[2015-06-26T13:17:54+00:00] ERROR: Exception handlers complete
+[2015-06-26T13:17:54+00:00] FATAL: Stacktrace dumped to C:/chef/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T13:17:54+00:00] FATAL: SyntaxError: C:/chef/local-mode-cache/cache/cookbooks/bwkz/recipes/default.rb:35: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+IIS-ISAPIExtensions /featureName:IIS-ISAPIFilter
+                     ^
+C:/chef/local-mode-cache/cache/cookbooks/bwkz/recipes/default.rb:35: unterminated regexp meets end of file
+[2015-06-26T13:56:41+00:00] ERROR: Running exception handlers
+[2015-06-26T13:56:41+00:00] ERROR: Exception handlers complete
+[2015-06-26T13:56:41+00:00] FATAL: Stacktrace dumped to C:/chef/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-26T13:56:41+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: windows_feature[ApplicationServer] (bwkz::default line 4) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42, 127, 3010], but received '-2146498548'
+---- Begin output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:ApplicationServer /norestart   ----
+STDOUT: Deployment Image Servicing and Management tool
+Version: 6.1.7600.16385
+
+Image Version: 6.1.7601.18489
+
+
+Error: 0x800f080c
+
+Feature name ApplicationServer is unknown.
+A Windows feature name was not recognized.
+Use the /Get-Features option to find the name of the feature in the image and try the command again.
+
+The DISM log file can be found at C:\Windows\Logs\DISM\dism.log
+STDERR: 
+---- End output of C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:ApplicationServer /norestart   ----
+Ran C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:ApplicationServer /norestart   returned -2146498548
