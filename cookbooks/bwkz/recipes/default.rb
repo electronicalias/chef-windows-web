@@ -1,7 +1,7 @@
 
 
 # Install Supporting Services
-%w[WAS-WindowsActivationService WAS-NetFxEnvironment WAS-ConfigurationAPI IIS-LoggingLibraries IIS-HttpTracing IIS-HttpCompressionDynamic IIS-ManagementScriptingTools IIS-IIS6ManagementCompatibility IIS-BasicAuthentication IIS-ManagementService IIS-FTPSvc IIS-FTPSvc IIS-FTPExtensibility WCF-HTTP-Activation IIS-WindowsAuthentication IIS-DigestAuthentication IIS-ClientCertificateMappingAuthentication  IIS-IISCertificateMappingAuthentication IIS-URLAuthorization IIS-IPSecurity].each do |feature|
+%w[WAS-WindowsActivationService WAS-NetFxEnvironment WAS-ConfigurationAPI IIS-LoggingLibraries IIS-HttpTracing IIS-HttpCompressionDynamic IIS-ManagementScriptingTools IIS-IIS6ManagementCompatibility IIS-BasicAuthentication IIS-ManagementService IIS-FTPSvc IIS-FTPSvc IIS-FTPExtensibility WCF-HTTP-Activation IIS-WindowsAuthentication IIS-DigestAuthentication IIS-ClientCertificateMappingAuthentication  IIS-IISCertificateMappingAuthentication IIS-URLAuthorization IIS-IPSecurity RSAT-RDS-RemoteApp].each do |feature|
   windows_feature feature do
     action :install
   end
