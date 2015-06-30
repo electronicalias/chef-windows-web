@@ -9,7 +9,7 @@ if node['osysflav'] != "windows"
   end
 end
 
-if node['osysflav'] != "windows"
+if node['region'] == "eu-west-1"
   windows_feature RSAT-RDS-RemoteApp do
     action :install
   end
