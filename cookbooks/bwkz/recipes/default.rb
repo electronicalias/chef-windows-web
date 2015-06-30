@@ -2,11 +2,11 @@
 
 # Install Supporting Services
 if node['osysflav'] != "windows"
-%w[WAS-WindowsActivationService WAS-NetFxEnvironment WAS-ConfigurationAPI IIS-LoggingLibraries IIS-HttpTracing IIS-HttpCompressionDynamic IIS-ManagementScriptingTools IIS-IIS6ManagementCompatibility IIS-BasicAuthentication IIS-ManagementService IIS-FTPSvc IIS-FTPSvc IIS-FTPExtensibility WCF-HTTP-Activation IIS-WindowsAuthentication IIS-DigestAuthentication IIS-ClientCertificateMappingAuthentication  IIS-IISCertificateMappingAuthentication IIS-URLAuthorization IIS-IPSecurity].each do |feature|
-  windows_feature feature do
-    action :install
+  %w[WAS-WindowsActivationService WAS-NetFxEnvironment WAS-ConfigurationAPI IIS-LoggingLibraries IIS-HttpTracing IIS-HttpCompressionDynamic IIS-ManagementScriptingTools IIS-IIS6ManagementCompatibility IIS-BasicAuthentication IIS-ManagementService IIS-FTPSvc IIS-FTPSvc IIS-FTPExtensibility WCF-HTTP-Activation IIS-WindowsAuthentication IIS-DigestAuthentication IIS-ClientCertificateMappingAuthentication  IIS-IISCertificateMappingAuthentication IIS-URLAuthorization IIS-IPSecurity].each do |feature|
+    windows_feature feature do
+      action :install
+    end
   end
-end
 end
 
 if node['osysflav'] != "windows"
@@ -17,43 +17,47 @@ end
 
 # Install Roles Features
 if node['osysflav'] != "windows"
-%w[IIS-WebServerRole IIS-WebServer NetFx3].each do |feature|
-  windows_feature feature do
-    action :install
-    all true
+  %w[IIS-WebServerRole IIS-WebServer NetFx3].each do |feature|
+    windows_feature feature do
+      action :install
+      all true
+    end
   end
-end
 end
 
 # Install Roles Features
 if node['osysflav'] != "windows"
-%w[ServicesForNFS-ServerAndClient ServerForNFS-Infrastructure ClientForNFS-Infrastructure NFS-Administration CoreFileServer].each do |feature|
-  windows_feature feature do
-    action :install
+  %w[ServicesForNFS-ServerAndClient ServerForNFS-Infrastructure ClientForNFS-Infrastructure NFS-Administration CoreFileServer].each do |feature|
+    windows_feature feature do
+      action :install
+    end
   end
-end
 end 
 
 
 # Install IIS Features
 if node['osysflav'] != "windows"
-%w[IIS-ApplicationDevelopment IIS-NetFxExtensibility IIS-ISAPIExtensions IIS-ISAPIFilter IIS-ASPNET IIS-HttpRedirect IIS-ASP IIS-HealthAndDiagnostics IIS-Security IIS-WebServerManagementTools IIS-FTPServer IIS-Performance].each do |feature|
-  windows_feature feature do
-    action :install
+  %w[IIS-ApplicationDevelopment IIS-NetFxExtensibility IIS-ISAPIExtensions IIS-ISAPIFilter IIS-ASPNET IIS-HttpRedirect IIS-ASP IIS-HealthAndDiagnostics IIS-Security IIS-WebServerManagementTools IIS-FTPServer IIS-Performance].each do |feature|
+    windows_feature feature do
+      action :install
+    end
   end
-end
 end
 
 # stop and delete the default site
-iis_site 'Default Web Site' do
-  action [:stop, :delete]
+if node['osysflav'] != "windows"
+  iis_site 'Default Web Site' do
+    action [:stop, :delete]
+  end
 end
 
 # do the same but map to testfu.chef.io domain
-iis_site 'Testfu Site' do
-  protocol :http
-  port 80
-  path "#{node['iis']['docroot']}/testfu"
-  host_header "testfu.chef.io"
-  action [:add,:start]
+if node['osysflav'] != "windows"
+  iis_site 'Testfu Site' do
+    protocol :http
+    port 80
+    path "#{node['iis']['docroot']}/testfu"
+    host_header "testfu.chef.io"
+    action [:add,:start]
+  end
 end
