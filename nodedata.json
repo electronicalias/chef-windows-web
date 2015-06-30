@@ -1,9 +1,6 @@
 {
-"run_list": [
-"recipe[bwkz]"
-],
-"name": “blah",
-"hostvars": {
+"name": "blah",
+"osysflav": "windows",
 "region": "eu-west-1",
 "env": "dev",
 "publicdns": "yes"

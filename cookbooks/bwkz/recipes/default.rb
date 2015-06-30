@@ -1,35 +1,47 @@
 
 
 # Install Supporting Services
-%w[WAS-WindowsActivationService WAS-NetFxEnvironment WAS-ConfigurationAPI IIS-LoggingLibraries IIS-HttpTracing IIS-HttpCompressionDynamic IIS-ManagementScriptingTools IIS-IIS6ManagementCompatibility IIS-BasicAuthentication IIS-ManagementService IIS-FTPSvc IIS-FTPSvc IIS-FTPExtensibility WCF-HTTP-Activation IIS-WindowsAuthentication IIS-DigestAuthentication IIS-ClientCertificateMappingAuthentication  IIS-IISCertificateMappingAuthentication IIS-URLAuthorization IIS-IPSecurity RSAT-RDS-RemoteApp].each do |feature|
+if node['osysflav'] != "windows"
+%w[WAS-WindowsActivationService WAS-NetFxEnvironment WAS-ConfigurationAPI IIS-LoggingLibraries IIS-HttpTracing IIS-HttpCompressionDynamic IIS-ManagementScriptingTools IIS-IIS6ManagementCompatibility IIS-BasicAuthentication IIS-ManagementService IIS-FTPSvc IIS-FTPSvc IIS-FTPExtensibility WCF-HTTP-Activation IIS-WindowsAuthentication IIS-DigestAuthentication IIS-ClientCertificateMappingAuthentication  IIS-IISCertificateMappingAuthentication IIS-URLAuthorization IIS-IPSecurity].each do |feature|
   windows_feature feature do
+    action :install
+  end
+end
+end
+
+if node['osysflav'] != "windows"
+  windows_feature RSAT-RDS-RemoteApp do
     action :install
   end
 end
 
 # Install Roles Features
+if node['osysflav'] != "windows"
 %w[IIS-WebServerRole IIS-WebServer NetFx3].each do |feature|
   windows_feature feature do
     action :install
     all true
   end
 end
+end
 
 # Install Roles Features
+if node['osysflav'] != "windows"
 %w[ServicesForNFS-ServerAndClient ServerForNFS-Infrastructure ClientForNFS-Infrastructure NFS-Administration CoreFileServer].each do |feature|
   windows_feature feature do
     action :install
-    all true
   end
 end
- 
+end 
 
 
 # Install IIS Features
+if node['osysflav'] != "windows"
 %w[IIS-ApplicationDevelopment IIS-NetFxExtensibility IIS-ISAPIExtensions IIS-ISAPIFilter IIS-ASPNET IIS-HttpRedirect IIS-ASP IIS-HealthAndDiagnostics IIS-Security IIS-WebServerManagementTools IIS-FTPServer IIS-Performance].each do |feature|
   windows_feature feature do
     action :install
   end
+end
 end
 
 # stop and delete the default site
