@@ -1,0 +1,10 @@
+{
+"run_list": [
+"recipe[bwkz]"
+],
+"name": “blah",
+"hostvars": {
+"region": "eu-west-1",
+"env": "dev",
+"publicdns": "yes"
+}
