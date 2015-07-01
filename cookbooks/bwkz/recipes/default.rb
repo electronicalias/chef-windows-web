@@ -60,17 +60,8 @@ if node['bwkzrole'] == "webserver1"
     iis_site bwkzsite do
       protocol :http
       port 80
-      path "#{node['iis']['docroot']}/someplace"
+      path "\\\\172.26.64.169\smbmount\\public\\clients\\#{node['bwkzsite'}\\webroot"
       action [:add,:start]
     end
-  end
-end
-
-if node['bwkzrole'] == "webserver"
-  iis_site 'awstest1' do
-    protocol :http
-    port 80
-    path "#{node['iis']['docroot']}/someplace"
-    action [:add,:start]
   end
 end
