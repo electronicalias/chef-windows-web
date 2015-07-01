@@ -54,6 +54,13 @@ if node['osysflav'] != "windows"
   end
 end
 
+# creates a new app pool
+iis_pool 'test2' do
+  runtime_version "2.0"
+  pipeline_mode :Integrated
+  action :add
+end
+
 # do the same but map to testfu.chef.io domain
 if node['bwkzrole'] == "webserver"
   %w[awstest1].each do |bwkzsite|
