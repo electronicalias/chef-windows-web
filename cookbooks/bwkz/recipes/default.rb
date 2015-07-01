@@ -55,7 +55,7 @@ if node['osysflav'] != "windows"
 end
 
 # do the same but map to testfu.chef.io domain
-if node['bwkzrole'] == "webserver"
+if node['bwkzrole'] == "webserver1"
   %w[awstest1].each do |bwkzsite|
     iis_site bwkzsite do
       protocol :http
@@ -63,5 +63,14 @@ if node['bwkzrole'] == "webserver"
       path "#{node['iis']['docroot']}/someplace"
       action [:add,:start]
     end
+  end
+end
+
+if node['bwkzrole'] == "webserver"
+  iis_site awstest1 do
+    protocol :http
+    port 80
+    path "#{node['iis']['docroot']}/someplace"
+    action [:add,:start]
   end
 end
