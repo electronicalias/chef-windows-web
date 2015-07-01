@@ -60,7 +60,7 @@ if node['bwkzrole'] == "webserver"
     iis_site bwkzsite do
       protocol :http
       port 80
-      path "\\\\172.26.64.169\smbmount\\public\\clients\\bwkzsite\\webroot"
+      path "\\\\172.26.64.169\smbmount\\public\\clients\\#{bwkzsite}\\webroot"
       action [:add,:start]
     end
   end
