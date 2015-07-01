@@ -67,7 +67,7 @@ if node['bwkzrole'] == "webserver1"
 end
 
 if node['bwkzrole'] == "webserver"
-  iis_site awstest1 do
+  iis_site 'awstest1' do
     protocol :http
     port 80
     path "#{node['iis']['docroot']}/someplace"
