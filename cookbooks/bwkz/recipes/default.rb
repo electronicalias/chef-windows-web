@@ -71,7 +71,7 @@ if node['bwkzrole'] == "webserver"
       port 80
       application_pool "#{bwkzsite}"
       path "\\\\172.26.64.169\\smbmount\\public\\clients\\#{bwkzsite}\\webroot"
-      host_header node['host_headers']['awstest1']
+      host_header node['host_headers']['#{bwkzsite}']
       action [:add,:start,:config]
     end
   end
