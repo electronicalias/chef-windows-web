@@ -3619,3 +3619,301 @@ Ran C:\Windows\sysnative\dism.exe /online /enable-feature /featurename:CoreFileS
 [2015-06-30T14:33:08+00:00] ERROR: Exception handlers complete
 [2015-06-30T14:33:08+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
 [2015-06-30T14:33:08+00:00] FATAL: NameError: uninitialized constant Chef::Recipe::RSAT
+[2015-06-30T14:47:22+00:00] ERROR: Running exception handlers
+[2015-06-30T14:47:22+00:00] ERROR: Exception handlers complete
+[2015-06-30T14:47:22+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-06-30T14:47:22+00:00] FATAL: NameError: uninitialized constant Chef::Recipe::RSAT
+[2015-07-01T07:41:20+00:00] ERROR: Running exception handlers
+[2015-07-01T07:41:20+00:00] ERROR: Exception handlers complete
+[2015-07-01T07:41:20+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T07:41:20+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '-1072894421'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe add site /name:"awstest1" /physicalPath:"\172.26.64.169 mbmountpublicientswstest1webroot" /bindings:"http/bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com:80"  ----
+STDOUT: SITE object "awstest1" added
+APP object "awstest1/" added
+VDIR object "awstest1/" added
+ERROR ( hresult:c00cee2b, message:Failed to commit configuration changes.  
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe add site /name:"awstest1" /physicalPath:"\172.26.64.169 mbmountpublicientswstest1webroot" /bindings:"http/bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com:80"  ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe add site /name:"awstest1" /physicalPath:"\172.26.64.169 mbmountpublicientswstest1webroot" /bindings:"http/bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com:80"  returned -1072894421
+[2015-07-01T07:51:20+00:00] ERROR: Running exception handlers
+[2015-07-01T07:51:20+00:00] ERROR: Exception handlers complete
+[2015-07-01T07:51:20+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T07:51:20+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T07:56:00+00:00] ERROR: Running exception handlers
+[2015-07-01T07:56:00+00:00] ERROR: Exception handlers complete
+[2015-07-01T07:56:00+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T07:56:00+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T07:56:59+00:00] ERROR: Running exception handlers
+[2015-07-01T07:56:59+00:00] ERROR: Exception handlers complete
+[2015-07-01T07:56:59+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T07:56:59+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:01:05+00:00] ERROR: Running exception handlers
+[2015-07-01T08:01:05+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:01:05+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:01:05+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:03:00+00:00] ERROR: Running exception handlers
+[2015-07-01T08:03:00+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:03:00+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:03:00+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:04:40+00:00] ERROR: Running exception handlers
+[2015-07-01T08:04:40+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:04:40+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:04:40+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:12:00+00:00] ERROR: Running exception handlers
+[2015-07-01T08:12:00+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:12:00+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:12:00+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:13:01+00:00] ERROR: Running exception handlers
+[2015-07-01T08:13:01+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:13:01+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:13:01+00:00] FATAL: NoMethodError: undefined method `physical_path' for LWRP resource iis_site from cookbook iis
+[2015-07-01T08:27:22+00:00] ERROR: Running exception handlers
+[2015-07-01T08:27:22+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:27:22+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:27:22+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:28:24+00:00] ERROR: Running exception handlers
+[2015-07-01T08:28:24+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:28:24+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:28:24+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:30:24+00:00] ERROR: Running exception handlers
+[2015-07-01T08:30:24+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:30:24+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:30:24+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:32:24+00:00] ERROR: Running exception handlers
+[2015-07-01T08:32:24+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:32:24+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:32:24+00:00] FATAL: NameError: No resource, method, or local variable named `awstest1' for `Chef::Recipe "default"'
+[2015-07-01T08:34:14+00:00] ERROR: Running exception handlers
+[2015-07-01T08:34:14+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:34:14+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:34:14+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 70) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T08:41:17+00:00] ERROR: Running exception handlers
+[2015-07-01T08:41:17+00:00] ERROR: Exception handlers complete
+[2015-07-01T08:41:17+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T08:41:17+00:00] FATAL: SyntaxError: C:/local-mode-cache/cache/cookbooks/bwkz/recipes/default.rb:63: syntax error, unexpected tSTRING_DEND, expecting ']'
+...ic\\clients\\#{node['bwkzsite'}\\webroot"
+...                               ^
+C:/local-mode-cache/cache/cookbooks/bwkz/recipes/default.rb:63: unterminated string meets end of file
+C:/local-mode-cache/cache/cookbooks/bwkz/recipes/default.rb:63: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+[2015-07-01T09:12:27+00:00] ERROR: Running exception handlers
+[2015-07-01T09:12:27+00:00] ERROR: Exception handlers complete
+[2015-07-01T09:12:27+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T09:12:27+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T09:14:48+00:00] ERROR: Running exception handlers
+[2015-07-01T09:14:48+00:00] ERROR: Exception handlers complete
+[2015-07-01T09:14:48+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T09:14:48+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 60) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T09:24:54+00:00] ERROR: Running exception handlers
+[2015-07-01T09:24:54+00:00] ERROR: Exception handlers complete
+[2015-07-01T09:24:54+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T09:24:54+00:00] FATAL: NoMethodError: undefined method `applicaiton_pool' for LWRP resource iis_site from cookbook iis
+[2015-07-01T12:12:13+00:00] ERROR: Running exception handlers
+[2015-07-01T12:12:13+00:00] ERROR: Exception handlers complete
+[2015-07-01T12:12:14+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T12:12:14+00:00] FATAL: NoMethodError: undefined method `applicaiton_pool' for LWRP resource iis_site from cookbook iis
+[2015-07-01T12:13:16+00:00] ERROR: Running exception handlers
+[2015-07-01T12:13:16+00:00] ERROR: Exception handlers complete
+[2015-07-01T12:13:16+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T12:13:16+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest2] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '183'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+STDOUT: ERROR ( hresult:800700b7, message:Command execution failed.  
+Cannot create a file when that file already exists.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" returned 183
+[2015-07-01T12:33:31+00:00] ERROR: Running exception handlers
+[2015-07-01T12:33:31+00:00] ERROR: Exception handlers complete
+[2015-07-01T12:33:31+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T12:33:31+00:00] FATAL: SyntaxError: C:/local-mode-cache/cache/cookbooks/bwkz/recipes/default.rb:76: syntax error, unexpected keyword_end, expecting ']'
+[2015-07-01T12:34:48+00:00] ERROR: Running exception handlers
+[2015-07-01T12:34:48+00:00] ERROR: Exception handlers complete
+[2015-07-01T12:34:48+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T12:34:48+00:00] FATAL: NoMethodError: undefined method `host_headers' for LWRP resource iis_site from cookbook iis
+[2015-07-01T12:37:21+00:00] ERROR: Running exception handlers
+[2015-07-01T12:37:21+00:00] ERROR: Exception handlers complete
+[2015-07-01T12:37:21+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T12:37:21+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest2] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '183'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+STDOUT: ERROR ( hresult:800700b7, message:Command execution failed.  
+Cannot create a file when that file already exists.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" returned 183
+[2015-07-01T12:44:03+00:00] ERROR: Running exception handlers
+[2015-07-01T12:44:03+00:00] ERROR: Exception handlers complete
+[2015-07-01T12:44:03+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T12:44:03+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T12:46:00+00:00] ERROR: Running exception handlers
+[2015-07-01T12:46:00+00:00] ERROR: Exception handlers complete
+[2015-07-01T12:46:00+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T12:46:00+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T12:46:39+00:00] ERROR: Running exception handlers
+[2015-07-01T12:46:39+00:00] ERROR: Exception handlers complete
+[2015-07-01T12:46:39+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T12:46:39+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest1] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '87'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+STDOUT: ERROR ( hresult:80070057, message:Command execution failed.  
+The parameter is incorrect.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest1" returned 87
+[2015-07-01T13:07:14+00:00] ERROR: Running exception handlers
+[2015-07-01T13:07:14+00:00] ERROR: Exception handlers complete
+[2015-07-01T13:07:14+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T13:07:14+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest2] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '183'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+STDOUT: ERROR ( hresult:800700b7, message:Command execution failed.  
+Cannot create a file when that file already exists.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" returned 183
+[2015-07-01T13:09:22+00:00] ERROR: Running exception handlers
+[2015-07-01T13:09:22+00:00] ERROR: Exception handlers complete
+[2015-07-01T13:09:22+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T13:09:22+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest2] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '183'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+STDOUT: ERROR ( hresult:800700b7, message:Command execution failed.  
+Cannot create a file when that file already exists.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" returned 183
+[2015-07-01T13:10:25+00:00] ERROR: Running exception handlers
+[2015-07-01T13:10:25+00:00] ERROR: Exception handlers complete
+[2015-07-01T13:10:25+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T13:10:25+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest2] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '183'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+STDOUT: ERROR ( hresult:800700b7, message:Command execution failed.  
+Cannot create a file when that file already exists.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" returned 183
+[2015-07-01T13:11:47+00:00] ERROR: Running exception handlers
+[2015-07-01T13:11:47+00:00] ERROR: Exception handlers complete
+[2015-07-01T13:11:47+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T13:11:47+00:00] FATAL: SyntaxError: C:/local-mode-cache/cache/cookbooks/bwkz/recipes/default.rb:71: syntax error, unexpected tIDENTIFIER, expecting ']'
+      port 80
+          ^
+C:/local-mode-cache/cache/cookbooks/bwkz/recipes/default.rb:75: syntax error, unexpected keyword_end, expecting tSTRING_DEND
+[2015-07-01T13:12:58+00:00] ERROR: Running exception handlers
+[2015-07-01T13:12:58+00:00] ERROR: Exception handlers complete
+[2015-07-01T13:12:58+00:00] FATAL: Stacktrace dumped to C:/local-mode-cache/cache/chef-stacktrace.out
+[2015-07-01T13:12:58+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: iis_site[awstest2] (bwkz::default line 68) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0, 42], but received '183'
+---- Begin output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+STDOUT: ERROR ( hresult:800700b7, message:Command execution failed.  
+Cannot create a file when that file already exists.
+ )
+STDERR: 
+---- End output of C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" ----
+Ran C:\Windows\System32\inetsrv\appcmd.exe start site /site.name:"awstest2" returned 183

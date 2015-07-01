@@ -14,7 +14,13 @@
     "osysflav": "windows",
     "region": "eu-west-1",
     "env": "dev",
-    "publicdns": "yes"
+    "publicdns": "yes",
+    "bwkzrole": "webserver",
+    "host_headers": {
+      "awstest1": "some.host.name",
+      "awstest2": "alternate.host.name",
+      "awstest3": "insert.my.data"
+    }
   },
   "default": {
     "chef_handler": {
@@ -59,8 +65,8 @@
     "filesystem": {
       "C:": {
         "kb_size": 42947571,
-        "kb_available": 8992485,
-        "kb_used": 33955086,
+        "kb_available": 8716509,
+        "kb_used": 34231062,
         "percent_used": 79,
         "mount": "C:",
         "fs_type": "ntfs",
@@ -98,13 +104,13 @@
         "distributed": false,
         "encryption_level": 256,
         "foreground_application_boost": 0,
-        "free_physical_memory": "384692",
-        "free_space_in_paging_files": "971528",
-        "free_virtual_memory": "1194616",
+        "free_physical_memory": "242712",
+        "free_space_in_paging_files": "1215996",
+        "free_virtual_memory": "1354832",
         "install_date": "20150616102441.000000+000",
         "large_system_cache": null,
         "last_boot_up_time": "20150630031615.500000+000",
-        "local_date_time": "20150630144058.981000+000",
+        "local_date_time": "20150701131938.953000+000",
         "locale": "0409",
         "manufacturer": "Microsoft Corporation",
         "max_number_of_processes": -1,
@@ -114,8 +120,8 @@
         ],
         "name": "Microsoft Windows Server 2008 R2 Datacenter |C:\\Windows|\\Device\\Harddisk0\\Partition1",
         "number_of_licensed_users": 0,
-        "number_of_processes": 61,
-        "number_of_users": 6,
+        "number_of_processes": 63,
+        "number_of_users": 7,
         "operating_system_sku": 8,
         "organization": "Amazon.com",
         "os_architecture": "64-bit",
@@ -132,14 +138,14 @@
         "serial_number": "00496-001-0001283-84650",
         "service_pack_major_version": 1,
         "service_pack_minor_version": 0,
-        "size_stored_in_paging_files": "1850580",
+        "size_stored_in_paging_files": "2013564",
         "status": "OK",
         "suite_mask": 400,
         "system_device": "\\Device\\HarddiskVolume1",
         "system_directory": "C:\\Windows\\system32",
         "system_drive": "C:",
         "total_swap_space_size": null,
-        "total_virtual_memory_size": "2898760",
+        "total_virtual_memory_size": "3061744",
         "total_visible_memory_size": "1048180",
         "version": "6.1.7601",
         "windows_directory": "C:\\Windows"
@@ -6536,8 +6542,8 @@
             "default_ttl": null,
             "description": "Citrix PV Ethernet Adapter #0",
             "dhcp_enabled": true,
-            "dhcp_lease_expires": "20150630151628.000000+000",
-            "dhcp_lease_obtained": "20150630141628.000000+000",
+            "dhcp_lease_expires": "20150701141629.000000+000",
+            "dhcp_lease_obtained": "20150701131629.000000+000",
             "dhcp_server": "172.26.65.65",
             "dns_domain": "eu-west-1.compute.internal",
             "dns_domain_suffix_search_order": [
@@ -6695,8 +6701,8 @@
     "platform": "windows",
     "platform_version": "6.1.7601",
     "platform_family": "windows",
-    "uptime_seconds": 41086,
-    "uptime": "11 hours 24 minutes 46 seconds",
+    "uptime_seconds": 122606,
+    "uptime": "1 day 10 hours 03 minutes 26 seconds",
     "languages": {
       "perl": {
         "version": "5.8.8",
@@ -6759,7 +6765,7 @@
 
       }
     },
-    "ohai_time": 1435675263.755529,
+    "ohai_time": 1435756783.305721,
     "root_group": "Administrators",
     "recipes": [
       "bwkz::default"

@@ -1,7 +1,13 @@
 {
-"name": "blah",
-"osysflav": "windows",
-"region": "eu-west-1",
-"env": "dev",
-"publicdns": "yes"
+  "name": "blah",
+  "osysflav": "windows",
+  "region": "eu-west-1",
+  "env": "dev",
+  "publicdns": "yes",
+  "bwkzrole": "webserver",
+  "host_headers": {
+    "awstest1": "some.host.name",
+    "awstest2": "alternate.host.name",
+    "awstest3": "insert.my.data"
+  }
 }
