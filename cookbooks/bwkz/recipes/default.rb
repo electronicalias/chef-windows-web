@@ -55,7 +55,7 @@ if node['osysflav'] != "windows"
 end
 
 # do the same but map to testfu.chef.io domain
-if node['osysflav'] != "windows"
+if node['osysflav'] == "windows"
   %w[awstest1].each do |site|
     iis_site site do
       bindings "http/bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com:80"
