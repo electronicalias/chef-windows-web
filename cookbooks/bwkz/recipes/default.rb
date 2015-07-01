@@ -55,7 +55,7 @@ if node['osysflav'] != "windows"
 end
 
 # do the same but map to testfu.chef.io domain
-if node['bwkzrole'] == "webserver1"
+if node['bwkzrole'] == "webserver"
   %w[awstest1].each do |bwkzsite|
     iis_site bwkzsite do
       protocol :http
