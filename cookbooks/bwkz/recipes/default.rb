@@ -66,7 +66,7 @@ if node['bwkzrole'] == "webserver"
       action :add
     end
     iis_site bwkzsite do
-      bindings "http/*:80:bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com"
+      bindings "http/*:80:{node['host_headers']['#{bwkzsite}']}"
       protocol :http
       port 80
       application_pool "#{bwkzsite}"
