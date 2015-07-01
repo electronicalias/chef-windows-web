@@ -56,8 +56,8 @@ end
 
 # do the same but map to testfu.chef.io domain
 if node['bwkzrole'] == "webserver"
-  %w[awstest1].each do |site|
-    iis_site site do
+  %w[awstest1].each do |bwkzsite|
+    iis_site bwkzsite do
       protocol :http
       port 80
       path "#{node['iis']['docroot']}/someplace"
