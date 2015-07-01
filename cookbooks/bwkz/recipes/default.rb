@@ -59,19 +59,19 @@ end
 
 # do the same but map to testfu.chef.io domain
 if node['bwkzrole'] == "webserver"
-  %w[awstest1 awstest2].each do |bwkzsite|
+  %w[awstest1].each do |bwkzsite|
     iis_pool bwkzsite do
       runtime_version "2.0"
       pipeline_mode :Integrated
       action :add
     end
     iis_site bwkzsite do
-      bindings "http/*:80:node['host_headers']['#{bwkzsite}']"
+      bindings {"http/*:80:node['host_headers']['#{bwkzsite}']"}
       protocol :http
       port 80
       application_pool "#{bwkzsite}"
       path "\\\\172.26.64.169\\smbmount\\public\\clients\\#{bwkzsite}\\webroot"
-      host_header node['host_headers']['"#{bwkzsite}"']
+      host_header node['host_headers']['awstest1']
       action [:add,:start,:config]
     end
   end
