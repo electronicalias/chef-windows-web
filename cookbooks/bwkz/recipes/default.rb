@@ -61,7 +61,7 @@ if node['bwkzrole'] == "webserver"
       bindings "http/bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com:80"
       protocol :http
       port 80
-      path "#{node}\\\\172.26.64.169\\smbmount\\public\\clients\\awstest1\\webroot"
+      physical_path '\\\\172.26.64.169\\smbmount\\public\\clients\\awstest1\\webroot'
       host_header "bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com"
       action [:add,:start]
     end
