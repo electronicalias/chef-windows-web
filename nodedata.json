@@ -6,7 +6,7 @@
   "publicdns": "yes",
   "bwkzrole": "webserver",
   "host_headers": {
-    "awstest1": "some.host.name",
+    "awstest1": "bwkz-devw-webserve-18vu9s4oqs2b5-1345742150.eu-west-1.elb.amazonaws.com",
     "awstest2": "alternate.host.name",
     "awstest3": "insert.my.data"
   }
