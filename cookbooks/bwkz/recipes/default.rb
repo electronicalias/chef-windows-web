@@ -55,19 +55,21 @@ if node['osysflav'] != "windows"
 end
 
 # creates a new app pool
-iis_pool 'test2' do
-  runtime_version "2.0"
-  pipeline_mode :Integrated
-  action :add
-end
+
 
 # do the same but map to testfu.chef.io domain
 if node['bwkzrole'] == "webserver"
-  %w[awstest1].each do |bwkzsite|
+  %w[awstest1 awstest2].each do |bwkzsite|
+    iis_pool bwkzsite do
+      runtime_version "2.0"
+      pipeline_mode :Integrated
+      action :add
+    end
     iis_site bwkzsite do
       bindings "http/*:80:bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com"
       protocol :http
       port 80
+      applicaiton_pool "#{bwkzsite}"
       path "\\\\172.26.64.169\\smbmount\\public\\clients\\#{bwkzsite}\\webroot"
       host_header "bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com"
       action [:add,:start,:config]
