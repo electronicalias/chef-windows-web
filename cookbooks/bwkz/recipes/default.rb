@@ -63,7 +63,7 @@ if node['bwkzrole'] == "webserver"
       port 80
       path "\\\\172.26.64.169\\smbmount\\public\\clients\\#{bwkzsite}\\webroot"
       host_header "bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com"
-      action [:add,:start]
+      action [:add,:start,:config]
     end
   end
 end
