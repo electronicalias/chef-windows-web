@@ -58,11 +58,9 @@ end
 if node['bwkzrole'] == "webserver"
   %w[awstest1].each do |site|
     iis_site site do
-      bindings "http/bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com:80"
       protocol :http
       port 80
       path "#{node['iis']['docroot']}/someplace"
-      host_header "bwkz-DevW-Webserve-18VU9S4OQS2B5-1345742150.eu-west-1.elb.amazonaws.com"
       action [:add,:start]
     end
   end
